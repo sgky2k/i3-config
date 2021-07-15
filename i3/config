@@ -230,8 +230,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
+#autostart programs
 
-
-exec --no-startup-id compton -CG --unredir-if-possible --config /dev/null
-exec terminator
-exec firefox
+exec --no-startup-id compton -CG --unredir-if-possible --config /dev/null 	#compton compositor
+exec terminator									#terminal emulator
+exec firefox									#web browser
